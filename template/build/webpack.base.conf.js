@@ -29,17 +29,25 @@ module.exports = {
   },
   module: {
     rules: [
-      {{#lint}}
+      // {{#lint}}
+      // {
+      //   test: /\.(ts|js|vue)$/,
+      //   loader: 'eslint-loader',
+      //   enforce: 'pre',
+      //   include: [resolve('src'), resolve('test')],
+      //   options: {
+      //     formatter: require('eslint-friendly-formatter')
+      //   }
+      // },
+      // {{/lint}}
       {
-        test: /\.(js|vue)$/,
-        loader: 'eslint-loader',
-        enforce: 'pre',
-        include: [resolve('src'), resolve('test')],
+        test: /\.ts$/,
+        exclude: /node_modules|vue\/src/,
+        loader: 'ts-loader',
         options: {
-          formatter: require('eslint-friendly-formatter')
+          appendTsSuffixTo: [/\.vue$/]
         }
       },
-      {{/lint}}
       {
         test: /\.vue$/,
         loader: 'vue-loader',
