@@ -15,7 +15,11 @@
   },
   "dependencies": {
     "vue": "^2.3.3"{{#router}},
-    "vue-router": "^2.6.0"{{/router}}
+    "vue-router": "^2.6.0"{{/router}},
+    "vue-class-component": "^5.0.2",
+    "vue-property-decorator": "^5.2.1",
+    "vuex": "^2.3.1",
+    "vuex-class": "^0.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
