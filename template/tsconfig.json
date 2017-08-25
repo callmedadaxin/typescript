@@ -1,22 +1,23 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
     "target": "es5",
-    "noImplicitAny": true,
-    "sourceMap": false,
-    "strictNullChecks": true,
-    "typeRoots": [
-      "./node_modules/@types"
-    ],
     "lib": [
       "dom",
-      "es5",
       "es2015"
     ],
-    "noEmitHelpers": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "isolatedModules": false,
     "experimentalDecorators": true,
-    "importHelpers": true,
-    "allowSyntheticDefaultImports": true,
-    "emitDecoratorMetadata": true
-  }
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "removeComments": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "./**/*.ts"
+  ],
+  "compileOnSave": false
 }
