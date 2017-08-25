@@ -19,7 +19,8 @@ import Component from 'vue-class-component'
 import Hello from './components/Hello'
 
 @Component({
-  Hello{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+  components: {
+    Hello{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
   }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 })
 {{/router}}
