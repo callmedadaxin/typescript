@@ -9,7 +9,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import Vue from 'vue'
 import Component from 'vue-class-component'
 {{#router}}
@@ -23,8 +23,7 @@ import Hello from './components/Hello'
   }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
 })
 {{/router}}
-export default {
-}{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+export default class App extends Vue {}{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 </script>
 
 <style>
